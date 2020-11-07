@@ -247,3 +247,7 @@ $(call inherit-product, vendor/havoc/config/rro_overlays.mk)
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/havoc/config/partner_gms.mk
 -include vendor/havoc/config/version.mk
+
+# Pixel APNs
+PRODUCT_COPY_FILES += \
+    vendor/havoc/products/common/telephony/apns-full-conf.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/apns-conf.xml
